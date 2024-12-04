@@ -191,6 +191,7 @@ def socket_thread():
         #PORT = 65432        # The port used by the server #This is the port to work with lab 10 part 4 for testing. 
         HOST = "192.168.1.1" # The cybots hostname or IP address. 
         PORT = 288           # The cybots Port. 
+        #if this does not work with the uart use the UART code above on line 184. 
 
         
         cybot_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Create a socket object
