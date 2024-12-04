@@ -6,6 +6,9 @@
 //              communicating with the Starter Client Socket code.   //
 ///////////////////////////////////////////////////////////////////////
 
+
+//THIS IS COVERED WITH THE uart.c MUCH OF THIS IS NOT NEED IN MAIN. 
+
 #include "Timer.h"
 #include "lcd.h"
 #include "uart.h"
