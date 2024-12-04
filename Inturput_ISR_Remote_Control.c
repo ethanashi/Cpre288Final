@@ -6,7 +6,7 @@
 //              communicating with the Starter Client Socket code.   //
 ///////////////////////////////////////////////////////////////////////
 
-//Add this file to the uart haldelr already made. Not all of this will be needed then just the main body. 
+//Added this file to the uart haldelr already made. Not all of this will be needed then just the main body. 
 
 #include "Timer.h"
 #include "lcd.h"
