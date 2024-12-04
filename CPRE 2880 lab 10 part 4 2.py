@@ -187,8 +187,12 @@ def socket_thread():
         # UART END
 
         # TCP Socket BEGIN (See Echo Client example): https://realpython.com/python-sockets/#echo-client-and-server
-        HOST = "127.0.0.1"  # The server's hostname or IP address
-        PORT = 65432        # The port used by the server
+        #HOST = "127.0.0.1"  # The server's hostname or IP address #This is the host to work with lab 10 part 4 for testing. 
+        #PORT = 65432        # The port used by the server #This is the port to work with lab 10 part 4 for testing. 
+        HOST = "192.168.1.1" # The cybots hostname or IP address. 
+        PORT = 288           # The cybots Port. 
+
+        
         cybot_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Create a socket object
         cybot_socket.connect((HOST, PORT))   # Connect to the socket  (Note: Server must first be running)
                       
