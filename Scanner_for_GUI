@@ -1,0 +1,21 @@
+void ir_scan() {
+  cyBot_Scan_t scanData; 
+
+  FILE *file: 
+  file = fopen("mock-sensor-scan.txt", "w"); 
+  fprintf(file, "Angle(Degrees)	Distance(m)\n"); 
+
+
+  int i = 0; 
+  for (i = 0; i < 180; i += 2) {
+    cyBot_Scan(i, &scanData); 
+    int ir_distance = adc_distance(); 
+
+    fprintf(file, "%d \t %d\n, i, ir_distance); 
+
+  }
+
+  fprintf(file, "END"); 
+
+  fclose(file); 
+}
